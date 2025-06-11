@@ -12,9 +12,6 @@
     "react",
     "zlottie"
   ],
-  "engines": {
-    "node": "20.17.x"
-  },
   "scripts": {
     "dev": "vite --host",
     "build": "tsc && vite build && cp dist/index.html dist/404.html",

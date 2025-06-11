@@ -55,17 +55,5 @@
         "zlottie": "Download '.zlottie'"
       }
     }
-  },
-  "howToUse": {
-    "title": "Instructions for using 'ZLottie'",
-    "subtitle": "First of all, I want to thank you for trusting and using ZLottie!",
-    "text": "What is ZLottie? This is a Lottie in the 'zlib' format. But it's not that simple... \r\n My goal was to create a way to compress and decompress large files, and besides, there was a problem with the very large size of Lottie animations, which can weigh several megabytes (!!!). Later, I was prompted that the GZIP format could be used. And yes, it has significantly reduced the size, but, as always, there is something to strive for! That's how ZLottie turned out. What's it? This is a file compressed using zlib in zlib-raw (you just can't unpack it like that). As a result, the size has decreased significantly! (in some cases, the size is reduced to 8 (!!!) once, just imagine what a saving it is!). But there are also victims! What's the matter… Middleware is needed for unpacking. It doesn't look like a problem, to be honest. Unpacking is extremely fast, and in any case, you should have a placeholder message at the time of lazy loading. As a result, this problem is completely invisible. Unpacking takes less than 0.1 ms, and downloading 500 KB can take up to 30 seconds! In addition, the library for unpacking weighs only 4 KB in production, and if only one function is used, even less after shaking.",
-    "usages": {
-      "0": "Lottie-Web Light was obtained from the Lottie-Web library! (About x2 times less than the usual Lottie-Web);",
-      "1": "fflate is a library for unpacking. If you check through 'bundlephobia', then the weight of the library at the time of writing is only 4 kb;",
-      "2": "zlottie =)"
-    },
-    "copy": "Copy code!",
-    "openInGitHub": "View in GitHub"
   }
 }

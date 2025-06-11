@@ -39,7 +39,7 @@ const FilePreview: FC<FilePreviewProps> = (props) => {
     const file = props.file.processed?.data[type];
     if (file) {
       const name = getName().name;
-      downloadFile(file, name, "zlottie");
+      downloadFile(file, name, type === "default" ? "json" : "zlottie");
     }
   };
 
